@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Figtree", sans-serif;
+}
+
+.figtree-500 {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+.figtree-800 {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: bold;
+  }
+
+:root {
+    --primary-color: hsl(47, 88%, 63%);
+    --secondary-color: hsl(228, 45%, 44%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+    --white-color: hsl(0, 0%, 100%);
+    --font-categorie: 16px;
+    --font-heading: 24px;
+    --font-paragraph: 14px;
+}
+
+@media (max-width: 376px) {
+    .wrapper {
+        padding: 0 20px;
+    }
+    .card {
+        padding: 0 20px;
+    }
+}
+@media (min-width: 375px) {
+    .wrapper {
+        padding: 0 20px;
+    }
+    .card {
+        padding: 0 20px;
+    }
+}
+
+body {
+    height: 100vh;
+    background: var(--primary-color) ;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: var(--white-color);
+    width: 335px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 440px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 5px 5px black;   
+}
+
+.img-banner img {
+    border-radius: 10px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0 0 0;
+}
+
+.text h2{
+    font-size: 24px;
+    color: var(--gray-950);
+}
+
+.text h2:hover{
+    color: var(--primary-color);
+}
+ 
+.text h3{
+    background: var(--primary-color);
+    font-size: var(--font-categorie);
+    width: 80px;
+    text-align: center;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.text h3:hover{
+    color: var(--gray-500);
+}
+
+.text p {
+    font-size: var(--font-paragraph);
+}
+
+.text .paragraph{
+    color: var(--gray-500);
+}
+
+.avatar-img{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin:30px 0 0 0;
+}
+
+.avatar-img img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.avatar-img p {
+    font-size: var(--font-paragraph);
+    color: var(--gray-900);
+    font-weight: bold;
+}
+
+.avatar-img p:hover {
+   color: var(--gray-500);
+}
